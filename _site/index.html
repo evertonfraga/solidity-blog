@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Home | Ethereum Foundation Blog</title>
+
+  <meta name="author" content="Solidity Team" />
+
+  
+  <meta name="description" content="Latest news and announcements">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Solidity Blog - blog.ethereum.org" href="/feed.xml" />
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css" />
+
+    
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/search.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="Home" />
+  
+
+   
+  <meta property="og:description" content="Latest news and announcements">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://localhost:4000/" />
+  <link rel="canonical" href="http://localhost:4000/" />
+  
+
+  
+  <meta property="og:image" content="http://localhost:4000/img/ethereum-blog-og-image.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Home" />
+  
+
+  
+  <meta name="twitter:description" content="Latest news and announcements">
+  
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/favicon.png" />
+  
+
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+</head>
+
+
+  <body>
+
+    
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand" href="http://localhost:4000">Solidity Blog</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="https://ethereum.org/">Ethereum.org</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="https://solidity.readthedocs.io/">Solidity Docs</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://localhost:4000 ">
+	      <img class="avatar-img" src="/img/avatar-icon.svg" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+  
+
+  <header class="header-section ">
+  
+
+  <div class="intro-header no-img">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="page-heading">
+            <h1>Ethereum Foundation Blog</h1>
+            
+              
+                <hr class="small">
+                <span class="page-subheading">Latest news and announcements</span>
+              
+            
+        
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="posts-list">
+  
+    <article class="post-preview">
+    <a href="/2020/01/29/solidity-0.6-try-catch/">
+	  <h2 class="post-title">Solidity 0.6.x features: try/catch statement</h2>
+
+	  
+    </a>
+
+    <span class="post-meta">Posted by Elena Gesheva on January 29, 2020</span>
+    <ul class="post-category-list">
+      
+      <li>
+        <a
+          href="/category/research-and-development/"
+          class="category-research-and-development">
+          Research & Development
+        </a>
+      </li>
+      
+    </ul>
+
+    <div class="post-entry-container">
+      
+      <div class="post-entry">
+        The try/catch syntax introduced in 0.6.0 is arguably the biggest leap in error handling capabilities in Solidity, since reason strings for revert and require were released in v0.4.22. Both try and catch have been reserved keywords since v0.5.9 and now we can use them to handle failures in external function calls without rolling back the complete transaction (state changes in the called function are still rolled back, but the ones in the calling function are not). We are moving one...
+        
+        
+          <a href="/2020/01/29/solidity-0.6-try-catch/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+
+</article>
+  
+    <article class="post-preview">
+    <a href="/2019/06/25/solidity-storage-array-bugs/">
+	  <h2 class="post-title">Solidity Storage Array Bugs</h2>
+
+	  
+    </a>
+
+    <span class="post-meta">Posted by Solidity and Security Team on June 25, 2019</span>
+    <ul class="post-category-list">
+      
+    </ul>
+
+    <div class="post-entry-container">
+      
+      <div class="post-entry">
+        Solidity Storage Array Bug Announcement This blog post is about two bugs connected to storage arrays which are otherwise unrelated. Both have been present in the compiler for a long time and have only been discovered now even though a contract containing them should very likely show malfunctions in tests. Daenam Kim with help from Nguyen Pham, both from Curvegrid discovered an issue where invalid data is stored in connection with arrays of signed integers. This bug has been present...
+        
+        
+          <a href="/2019/06/25/solidity-storage-array-bugs/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+
+</article>
+  
+    <article class="post-preview">
+    <a href="/2019/03/26/solidity-optimizer-and-abiencoderv2-bug/">
+	  <h2 class="post-title">Solidity Optimizer and ABIEncoderV2 Bug</h2>
+
+	  
+    </a>
+
+    <span class="post-meta">Posted by Solidity and Security Team on March 26, 2019</span>
+    <ul class="post-category-list">
+      
+    </ul>
+
+    <div class="post-entry-container">
+      
+      <div class="post-entry">
+        Solidity Optimizer and ABIEncoderV2 Bug Announcement Through the Ethereum bug bounty program, we received a report about a flaw within the new experimental ABI encoder (referred to as ABIEncoderV2). Upon investigation, it was found that the component suffers from a few different variations of the same type. The first part of this announcement explains this bug in detail. The new ABI encoder is still marked as experimental, but we nevertheless think that this deserves a prominent announcement since it is...
+        
+        
+          <a href="/2019/03/26/solidity-optimizer-and-abiencoderv2-bug/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+
+</article>
+  
+    <article class="post-preview">
+    <a href="/2018/09/13/solidity-bugfix-release/">
+	  <h2 class="post-title">Solidity Bugfix Release</h2>
+
+	  
+    </a>
+
+    <span class="post-meta">Posted by Solidity Team on September 13, 2018</span>
+    <ul class="post-category-list">
+      
+    </ul>
+
+    <div class="post-entry-container">
+      
+      <div class="post-entry">
+        The latest version 0.4.25 release of Solidity fixes
+two important bugs.
+Another important bug has already been fixed in version 0.4.22 but it was only discovered recently that the bug existed.
+
+Note that the Ethereum Foundation runs a bounty program for the code generator part of Solidity.
+
+
+        
+        
+          <a href="/2018/09/13/solidity-bugfix-release/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+
+</article>
+  
+    <article class="post-preview">
+    <a href="/2017/05/03/solidity-optimizer-bug/">
+	  <h2 class="post-title">Solidity optimizer bug</h2>
+
+	  
+    </a>
+
+    <span class="post-meta">Posted by Martin Swende on May 3, 2017</span>
+    <ul class="post-category-list">
+      
+    </ul>
+
+    <div class="post-entry-container">
+      
+      <div class="post-entry">
+        A bug in the Solidity optimizer was reported through the Ethereum Foundation Bounty program, by Christoph Jentzsch. This bug is patched as of 2017-05-03, with the release of Solidity 0.4.11. Background The bug in question concerned how the optimizer optimizes on constants in the byte code. By “byte code constants”, we mean anything which is PUSHed on the stack (not to be confused with Solidity constants). For example, if the value 0xfffffffffffffffffffffffffffffffffffffffffffffffe is PUSHed, then the optimizer can either do...
+        
+        
+          <a href="/2017/05/03/solidity-optimizer-bug/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+
+</article>
+  
+    <article class="post-preview">
+    <a href="/2016/11/01/security-alert-solidity-variables-can-overwritten-storage/">
+	  <h2 class="post-title">Security Alert &#8211; Solidity &#8211; Variables can be overwritten in storage</h2>
+
+	  
+    </a>
+
+    <span class="post-meta">Posted by Christian Reitwiessner on November 1, 2016</span>
+    <ul class="post-category-list">
+      
+      <li>
+        <a
+          href="/category/security/"
+          class="category-security">
+          Security
+        </a>
+      </li>
+      
+    </ul>
+
+    <div class="post-entry-container">
+      
+      <div class="post-entry">
+        Summary: In some situations, variables can overwrite other variables in storage. Affected Solidity compiler versions: 0.1.6 to 0.4.3 (including 0.4.4 pre-release versions) Detailed description: Storage variables that are smaller than 256 bits are packed together into the same 256 bit slot if they can fit. If a value larger than what is allowed by the type is assigned to the first variable, that value will overwrite the second variable. This means if an attacker can cause an overflow in the...
+        
+        
+          <a href="/2016/11/01/security-alert-solidity-variables-can-overwritten-storage/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+
+</article>
+  
+    <article class="post-preview">
+    <a href="/2016/09/01/formal-methods-roadmap/">
+	  <h2 class="post-title">Dev Update: Formal Methods</h2>
+
+	  
+    </a>
+
+    <span class="post-meta">Posted by Christian Reitwiessner on September 1, 2016</span>
+    <ul class="post-category-list">
+      
+    </ul>
+
+    <div class="post-entry-container">
+      
+      <div class="post-entry">
+        Today, I am delighted to announce that Yoichi Hirai (pirapira on github) is joining the Ethereum project as a formal verification engineer. He holds a PhD from the University of Tokyo on the topic of formalizing communicating parallel processes and created formal verification tools for Ethereum in his spare time. In his own words: I’m joining Ethereum as a formal verification engineer. My reasoning: formal verification makes sense as a profession only in a rare situation where the verification target...
+        
+        
+          <a href="/2016/09/01/formal-methods-roadmap/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+
+</article>
+  
+    <article class="post-preview">
+    <a href="/2016/06/10/smart-contract-security/">
+	  <h2 class="post-title">Smart Contract Security</h2>
+
+	  
+    </a>
+
+    <span class="post-meta">Posted by Christian Reitwiessner on June 10, 2016</span>
+    <ul class="post-category-list">
+      
+    </ul>
+
+    <div class="post-entry-container">
+      
+      <div class="post-entry">
+        Solidity was started in October 2014 when neither the Ethereum network nor the virtual machine had any real-world testing, the gas costs at that time were even drastically different from what they are now. Furthermore, some of the early design decisions were taken over from Serpent. During the last couple of months, examples and patterns that were initially considered best-practice were exposed to reality and some of them actually turned out to be anti-patterns. Due to that, we recently updated...
+        
+        
+          <a href="/2016/06/10/smart-contract-security/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+
+</article>
+  
+</div>
+
+
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="/feed.xml" title="RSS"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">RSS</span>
+              </a>
+            </li><li><a href="mailto:solidity@ethereum.org" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://www.facebook.com/ethereumproject" title="Facebook"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li><li><a href="https://github.com/ethereum" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li><li><a href="https://twitter.com/solidity_lang" title="Twitter"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li><li><a href="https://stackoverflow.com/users/https://ethereum.stackexchange.com/questions/tagged/solidity" title="StackOverflow"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">StackOverflow</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+        Solidity Team
+        &nbsp;&bull;&nbsp;
+        2020
+
+        
+        &nbsp;&bull;&nbsp;
+        <a href="http://localhost:4000">blog.ethereum.org</a>
+        
+
+        &nbsp;&bull;&nbsp;
+        <a href="/archive/">Blog Archive</a>
+
+        
+        
+      </p>
+        <!-- Please don't remove this, keep my open source work credited :) -->
+        <p class="theme-by text-muted">
+          Theme by
+          <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+
+
+  
+
+
+
+
+
+
+
+  
+    
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+<script>
+    function injectProperties(item) {
+        if (item.categories) {
+            item.categoriesMap = item.categories.map(e => {
+                return {
+                    name: e,
+                    slug: e.replace('&', 'and').replace(/\s+/g, '-').toLowerCase()
+                }
+            })
+        }
+
+        if (item.date) {
+            item.dateFormatted = new Date(item.date * 1000).toLocaleDateString()
+        }
+        console.log(item);
+        
+        return item
+    };
+
+    const search = instantsearch({
+        appId: 'DTH6Q9FCM4',
+        apiKey: '',
+        indexName: '',
+        routing: true
+    });
+
+    // initialize SearchBox
+    search.addWidget(
+        instantsearch.widgets.searchBox({
+            container: '#search-box',
+            placeholder: 'Search for posts'
+        })
+    );
+
+    // initialize RefinementList
+    search.addWidget(
+        instantsearch.widgets.refinementList({
+            container: '#search-refinement-list',
+            attributeName: 'categories'
+        })
+    );    
+    
+    // initialize currentRefinedValues
+    search.addWidget(
+        instantsearch.widgets.currentRefinedValues({
+        container: '#search-current-refined-values'
+        })
+    );
+
+    // initialize pagination
+    search.addWidget(
+        instantsearch.widgets.pagination({
+        container: '#search-pagination',
+        maxPages: 20,
+        })
+    );
+
+    
+    // initialize hits widget
+    search.addWidget(
+        instantsearch.widgets.hits({
+            // transformItems: c => {console.log(c); return c },
+            transformItems: c => c.map(e => injectProperties(e)),
+            container: '#search-hits',
+            templates: {
+                empty: 'No results',
+                item: `
+                    <h2><a href="{{url}}">{{{_highlightResult.title.value}}}</a></h2>
+                    <p>{{{_highlightResult.content.value}}}</p>
+                    <p class="post-meta">
+                        {{#categoriesMap}}
+                            <a href="/category/{{slug}}.html" class="category-{{slug}}">{{name}}</a>
+                        {{/categoriesMap}}
+                        {{#author}}
+                            <span><i class="fa fa-user-o" aria-hidden="true"></i> {{author}}</span>
+                        {{/author}}
+                        {{#dateFormatted}}
+                            <span><i class="fa fa-calendar-o"></i> {{dateFormatted}}</span>
+                        {{/dateFormatted}}
+                    </p>
+                `
+            }
+        })
+    );
+    
+    search.start();
+</script>
+
+  
+  </body>
+</html>

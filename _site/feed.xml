@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solidity Blog</title>
+    <description>blog.ethereum.org</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Solidity 0.6.x features: try/catch statement</title>
+        <description>
+          
+          The try/catch syntax introduced in 0.6.0 is arguably the biggest leap in error handling capabilities in Solidity, since reason strings for revert and require were released in v0.4.22. Both try and catch have been reserved keywords since v0.5.9 and now we can use them to handle failures in external function...
+        </description>
+        <pubDate>Wed, 29 Jan 2020 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2020/01/29/solidity-0.6-try-catch/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/01/29/solidity-0.6-try-catch/</guid>
+      </item>
+    
+      <item>
+        <title>Solidity Storage Array Bugs</title>
+        <description>
+          
+          Solidity Storage Array Bug Announcement This blog post is about two bugs connected to storage arrays which are otherwise unrelated. Both have been present in the compiler for a long time and have only been discovered now even though a contract containing them should very likely show malfunctions in tests....
+        </description>
+        <pubDate>Tue, 25 Jun 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019/06/25/solidity-storage-array-bugs/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/25/solidity-storage-array-bugs/</guid>
+      </item>
+    
+      <item>
+        <title>Solidity Optimizer and ABIEncoderV2 Bug</title>
+        <description>
+          
+          Solidity Optimizer and ABIEncoderV2 Bug Announcement Through the Ethereum bug bounty program, we received a report about a flaw within the new experimental ABI encoder (referred to as ABIEncoderV2). Upon investigation, it was found that the component suffers from a few different variations of the same type. The first part...
+        </description>
+        <pubDate>Tue, 26 Mar 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2019/03/26/solidity-optimizer-and-abiencoderv2-bug/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/26/solidity-optimizer-and-abiencoderv2-bug/</guid>
+      </item>
+    
+      <item>
+        <title>Solidity Bugfix Release</title>
+        <description>
+          
+          The latest version 0.4.25 release of Solidity fixes two important bugs. Another important bug has already been fixed in version 0.4.22 but it was only discovered recently that the bug existed. Note that the Ethereum Foundation runs a bounty program for the code generator part of Solidity. Cleanup of Exponent...
+        </description>
+        <pubDate>Thu, 13 Sep 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2018/09/13/solidity-bugfix-release/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/13/solidity-bugfix-release/</guid>
+      </item>
+    
+      <item>
+        <title>Solidity optimizer bug</title>
+        <description>
+          
+          A bug in the Solidity optimizer was reported through the Ethereum Foundation Bounty program, by Christoph Jentzsch. This bug is patched as of 2017-05-03, with the release of Solidity 0.4.11. Background The bug in question concerned how the optimizer optimizes on constants in the byte code. By “byte code constants”,...
+        </description>
+        <pubDate>Wed, 03 May 2017 15:21:57 +0000</pubDate>
+        <link>http://localhost:4000/2017/05/03/solidity-optimizer-bug/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/03/solidity-optimizer-bug/</guid>
+      </item>
+    
+      <item>
+        <title>Security Alert &amp;#8211; Solidity &amp;#8211; Variables can be overwritten in storage</title>
+        <description>
+          
+          Summary: In some situations, variables can overwrite other variables in storage. Affected Solidity compiler versions: 0.1.6 to 0.4.3 (including 0.4.4 pre-release versions) Detailed description: Storage variables that are smaller than 256 bits are packed together into the same 256 bit slot if they can fit. If a value larger than...
+        </description>
+        <pubDate>Tue, 01 Nov 2016 08:40:44 +0000</pubDate>
+        <link>http://localhost:4000/2016/11/01/security-alert-solidity-variables-can-overwritten-storage/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/01/security-alert-solidity-variables-can-overwritten-storage/</guid>
+      </item>
+    
+      <item>
+        <title>Dev Update: Formal Methods</title>
+        <description>
+          
+          Today, I am delighted to announce that Yoichi Hirai (pirapira on github) is joining the Ethereum project as a formal verification engineer. He holds a PhD from the University of Tokyo on the topic of formalizing communicating parallel processes and created formal verification tools for Ethereum in his spare time....
+        </description>
+        <pubDate>Thu, 01 Sep 2016 19:55:01 +0000</pubDate>
+        <link>http://localhost:4000/2016/09/01/formal-methods-roadmap/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/09/01/formal-methods-roadmap/</guid>
+      </item>
+    
+      <item>
+        <title>Smart Contract Security</title>
+        <description>
+          
+          Solidity was started in October 2014 when neither the Ethereum network nor the virtual machine had any real-world testing, the gas costs at that time were even drastically different from what they are now. Furthermore, some of the early design decisions were taken over from Serpent. During the last couple...
+        </description>
+        <pubDate>Fri, 10 Jun 2016 18:27:17 +0000</pubDate>
+        <link>http://localhost:4000/2016/06/10/smart-contract-security/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/06/10/smart-contract-security/</guid>
+      </item>
+    
+  </channel>
+</rss>
